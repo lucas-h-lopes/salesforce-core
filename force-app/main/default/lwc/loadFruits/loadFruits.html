@@ -1,0 +1,19 @@
+<template>
+
+    <div>
+        <template lwc:if={error}>
+            <c-error-panel error={error}></c-error-panel>
+        </template>
+        <template lwc:elseif={hasFruits}>
+            <div>
+                <lightning-combobox class="fruitSelect" name="fruitNames" label="Fruta a consultar" options={fruitOptions} value="default" onchange={handleChange} placeholder="Selecione uma fruta" required></lightning-combobox>
+            </div>
+            <div class="slds-grid slds-grid_align-end">
+                <div class="slds-col slds-p-top_medium">
+                    <lightning-button class="prosseguir" variant="brand" label="Prosseguir" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+        </template>
+    </div>
+
+</template>

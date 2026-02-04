@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-p-horizontal_medium">
+        <lightning-button variant="brand" label="Fruityvice" onclick={abrirModal} icon-name="utility:food_and_drink">
+        </lightning-button>
+        <template lwc:if={isModalOpen}>
+            <c-modal title="Fruityvice" is-open={isModalOpen} oncancel={onModalCancel} onsave={onModalSave}>
+                <template lwc:if={isFirstStep}>
+                    <c-load-fruits onselectfruit={handleSelectFruit}></c-load-fruits>
+                </template>
+                <template lwc:elseif={isSecondStep}>
+                    <c-detailed-fruit fruit-id={fruitId}></c-detailed-fruit>
+                </template>
+                <div slot="footer" class="slds-grid slds-grid_align-end">
+                    <template lwc:if={isSecondStep}>
+                        <div class="slds-col">
+                            <lightning-button variant="brand" label="Voltar" onclick={previousStep}></lightning-button>
+                        </div>
+                    </template>
+                </div>
+
+            </c-modal>
+        </template>
+    </div>
+</template>

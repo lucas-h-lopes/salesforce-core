@@ -1,0 +1,94 @@
+<template>
+
+    <div>
+        <template lwc:if={error}>
+            <c-error-panel error={error}></c-error-panel>
+        </template>
+        <template lwc:elseif={isLoading}>
+            <div class="spinner-wrapper">
+                <lightning-spinner size="small"></lightning-spinner>
+            </div>
+        </template>
+        <template lwc:elseif={hasFruit}>
+            <h1 class="title slds-m-bottom_xx-small">Dados Gerais</h1>
+            <section class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-12">
+                            Nome
+                        </div>
+                        <div>
+                            {name}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-12">
+                            Família
+                        </div>
+                        <div>
+                            {family}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-12">
+                            Ordem
+                        </div>
+                        <div>
+                            {order}
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-12">
+                            Gênero
+                        </div>
+                        <div>
+                            {genus}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template lwc:if={hasNutrition}>
+            <h2 class="title slds-m-top_medium slds-m-bottom_xx-small">Tabela Nutricional</h2>
+            <section class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <p class="slds-size_2-of-12">Calorias</p>
+                        <p>{calories}</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <p class="slds-size_2-of-12">Gorduras</p>
+                        <p>{fat}</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <p class="slds-size_2-of-12">Açúcares</p>
+                        <p>{sugar}</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <p class="slds-size_2-of-12">Carboídratos</p>
+                        <p>{carbohydrates}</p>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1">
+                    <div class="slds-grid">
+                        <p class="slds-size_2-of-12">Proteínas</p>
+                        <p>{protein}</p>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </div>
+
+</template>

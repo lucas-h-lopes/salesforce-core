@@ -1,0 +1,11 @@
+<template>
+    <lightning-button 
+      variant="brand"
+      label="Render New Paragraph" 
+      onclick={renderNewParagraph} 
+    ></lightning-button>
+    <template lwc:if={showNewParagraph}>
+        <p class="newParagraph">Wow I love Tacos</p>
+    </template>
+    <p>{variavel}</p>
+</template>

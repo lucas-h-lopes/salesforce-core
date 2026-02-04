@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <lightning-icon icon-name={iconName} alternative-text="Expandir" onclick={handleClick} size="xx-small"></lightning-icon>
+        <span class="slds-text-color_error slds-m-left_small">{userFriendlyMessage}.</span>
+        <template lwc:if={showDetailedMessage}>
+                <p class="slds-m-top_xx-small">Message: <span class="slds-text-color_weak">{error.body.message}</span></p>
+                <p>Status Code: <span class="slds-text-color_weak">{error.status}</span></p>
+        </template>
+    </div>
+</template>

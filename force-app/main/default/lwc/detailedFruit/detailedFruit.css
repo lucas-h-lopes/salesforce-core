@@ -1,0 +1,9 @@
+.title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.spinner-wrapper {
+    position: relative;
+    min-height: 200px;
+}
