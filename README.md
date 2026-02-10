@@ -8,6 +8,8 @@ O **salesforce-core** é um repositório voltado para aprendizado prático em Sa
 
   Consiste na integração com a API [Fruityvice](https://www.fruityvice.com/) através do desenvolvimento de classes Apex Callout REST, Controller e testes unitários. O backend comunica-se com a UI por meio de componentes Web do Lightning. 
 
+  💡 **Dica**: O arquivo `./fruityvice-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
+
  **Apex e configuração**
   
 >  **FruityviceService.cls**: Implementa métodos para comunicação com a API nos recursos de listagem total de frutas e listagem de fruta por Id, lançando uma exceção personalizada do tipo FruityviceException caso o endpoint retorne um status code 4xx (único possível pela documentação oficial da API) <br> <br>
@@ -35,6 +37,8 @@ https://github.com/user-attachments/assets/22d6c0b6-6c90-4d93-b0ce-60152c3a10a9
 ### Fluxo automatizado para solicitação de demandas
 
 Desenvolvimento baseado em Flow para a criação de um formulário que permite que usuários comuns comuniquem-se com administradores para atendimento de chamado, centralizado para a implementação de novas funcionalidades na org.
+
+💡 **Dica**: O arquivo `./form-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
 
 **Screen Flow**
 
