@@ -3,7 +3,7 @@
     <description>Atribui permissão ao Named Credential e classes Apex associadas a integração do serviço Fruityvice.</description>
     <externalCredentialPrincipalAccesses>
         <enabled>true</enabled>
-        <externalCredentialPrincipal>Fruityvice_External_Credential-Default</externalCredentialPrincipal>
+        <externalCredentialPrincipal>Fruityvice_External_Credential-User</externalCredentialPrincipal>
     </externalCredentialPrincipalAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Grant Fruityvice Integration Access</label>
