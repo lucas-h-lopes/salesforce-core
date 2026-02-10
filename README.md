@@ -8,7 +8,8 @@ O **salesforce-core** é um repositório voltado para aprendizado prático em Sa
 
   Consiste na integração com a API [Fruityvice](https://www.fruityvice.com/) através do desenvolvimento de classes Apex Callout REST, Controller e testes unitários. O backend comunica-se com a UI por meio de componentes Web do Lightning. 
 
-  💡 **Dica**: O arquivo `./fruityvice-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
+  > 💡 **Dica**: O arquivo `./fruityvice-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
+    É necessário atribuir o permission set `Grant_Fruityvice_Integration_Access` para visualizar a integração.
 
  **Apex e configuração**
   
@@ -38,7 +39,8 @@ https://github.com/user-attachments/assets/22d6c0b6-6c90-4d93-b0ce-60152c3a10a9
 
 Desenvolvimento baseado em Flow para a criação de um formulário que permite que usuários comuns comuniquem-se com administradores para atendimento de chamado, centralizado para a implementação de novas funcionalidades na org.
 
-💡 **Dica**: O arquivo `./form-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
+>💡 **Dica**: O arquivo `./form-xml/package.xml` contém todos os metadados necessários para realizar o deploy dessa feature em seu ambiente.
+    É necessário atribuir o permission set `Default_Access` nos usuários finais para que o Screen Flow consiga visualizar os campos do Project__c.
 
 **Screen Flow**
 
