@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Project__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <members>Assign_Admin_to_Project</members>
+        <members>CreateProjectForm</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Project__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>Error_PNG</members>
+        <members>Success_PNG</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Default_Access</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Project__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Project__c-Project Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>64.0</version>
+</Package>

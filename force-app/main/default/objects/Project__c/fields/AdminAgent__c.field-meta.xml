@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdminAgent__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Representa o Administrador associado a essa solicitação.</description>
+    <inlineHelpText>O agente administrator que dará andamento com a solicitação.</inlineHelpText>
+    <label>Admin Agent</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>O usuário não está ativo ou não é administrador.</errorMessage>
+        <filterItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

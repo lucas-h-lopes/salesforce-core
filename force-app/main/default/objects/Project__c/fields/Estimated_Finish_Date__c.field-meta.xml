@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Finish_Date__c</fullName>
+    <description>Define a data de entrega com base na prioridade da solicitação.</description>
+    <formula>CASE(Priority__c, &quot;Low&quot;, TODAY() + 7, &quot;Medium&quot;, TODAY()+5,&quot;High&quot;,TODAY()+3,&quot;Critical&quot;,TODAY()+1,TODAY())</formula>
+    <label>Estimated Finish Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
